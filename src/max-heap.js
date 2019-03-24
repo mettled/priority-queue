@@ -8,13 +8,14 @@ class MaxHeap {
 	}
 
 	push(data, priority) {
-		var current = new node();
+		var current = new MaxHeap();
 		current.insertNode(data, this.priority);
-		current.shiftNodeUp(data, this.priority);
+		//current.shiftNodeUp(data, this.priority);
 
 	}
 
 	pop() {
+
 
 	}
 
@@ -31,12 +32,12 @@ class MaxHeap {
 	}
 
 	isEmpty() {
-		return this.length === 0;
+		return !(this.length === 0);
 	}
 
 	clear() {
-		MaxHeap.root = null;
-		MaxHeap.parentNodes = [];
+		this.root = null;
+		this.parentNodes = [];
 
 	}
 
