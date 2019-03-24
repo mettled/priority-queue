@@ -8,8 +8,10 @@ class MaxHeap {
 	}
 
 	push(data, priority) {
-		insertNode = new (data, priority);
-		shiftNodeUp = new (data, priority);
+		h = new MaxHeap();
+		h.insertNode(data, priority);
+		h.shiftNodeUp(data, priority);
+
 	}
 
 	pop() {
