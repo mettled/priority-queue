@@ -19,6 +19,10 @@ class Node {
 		}
 
 
+
+
+
+		this.left.parent = null;
 	}
 
 	removeChild(node) {
@@ -28,13 +32,24 @@ class Node {
 		if (this.right){
 			this.right = null;
 		}
+
+		if (node.left != this.left && node.right != this.right)
+			return error;
+
+
 	}
 
 	remove() {
+		if (this.parent == null )
+			return;
 
+		removeChild(node);
 	}
 
 	swapWithParent() {
+		if (this.parent == null )
+			return;
+
 
 	}
 }

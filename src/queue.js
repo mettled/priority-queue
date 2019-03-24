@@ -8,13 +8,7 @@ class PriorityQueue {
 
 	push(data, priority = 0) {
 
-		return this.heap.push({
-			value: value,
-			priority: priority
-		  });
-		//this.heap.push(data, priority);
 
-		//console.log(data);
 
 	}
 
@@ -23,11 +17,11 @@ class PriorityQueue {
 	}
 
 	size() {
-		//return this.length;
+		return this.heap.length;
 	}
 
 	isEmpty() {
-		//return !(this.length === 0);
+		return (this.heap.length === 0);
 	}
 }
 
