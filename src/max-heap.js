@@ -8,9 +8,9 @@ class MaxHeap {
 	}
 
 	push(data, priority) {
-		h = new MaxHeap();
-		h.insertNode(data, priority);
-		h.shiftNodeUp(data, priority);
+		var current = new node();
+		current.insertNode(data, this.priority);
+		current.shiftNodeUp(data, this.priority);
 
 	}
 
@@ -27,19 +27,21 @@ class MaxHeap {
 	}
 
 	size() {
-
+		return this.length;
 	}
 
 	isEmpty() {
-
+		return this.length === 0;
 	}
 
 	clear() {
+		MaxHeap.root = null;
+		MaxHeap.parentNodes = [];
 
 	}
 
 	insertNode(node) {
-
+		let node = new Node();
 	}
 
 	shiftNodeUp(node) {

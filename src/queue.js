@@ -7,10 +7,15 @@ class PriorityQueue {
 	}
 
 	push(data, priority = 0) {
-		return this._Data.push({
-			data: data,
-			priority: priority
-		  });
+
+		if (data.length < 1) {
+			return false;
+		  } else if (data.length === 1) {
+			return this.add(data[0]);
+		  } else {
+			return this.addAll(data);
+		  }
+
 	}
 
 	shift() {
@@ -18,11 +23,11 @@ class PriorityQueue {
 	}
 
 	size() {
-		return this._q.length;
+		return this.length;
 	}
 
 	isEmpty() {
-
+		return this.length === 0;
 	}
 }
 
