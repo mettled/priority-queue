@@ -28,7 +28,7 @@ class MaxHeap {
 	}
 
 	size() {
-		//return this.length;
+		return this.MaxHeap.length;
 	}
 
 	isEmpty() {
@@ -36,8 +36,8 @@ class MaxHeap {
 	}
 
 	clear() {
-		//this.root = null;
-		//this.parentNodes = [];
+		this.root = null;
+		this.parentNodes = [];
 
 	}
 
