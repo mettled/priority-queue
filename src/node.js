@@ -9,7 +9,8 @@ class Node {
 	}
 
 	appendChild(node) {
-		this.left = node;
+		//this.left = node;
+
 	}
 
 	removeChild(node) {
